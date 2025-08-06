@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Five - Burgers & Fries Worth a High Five!</title>
+    <meta name="description" content="High Five serves the most delicious burgers and fries that are worth celebrating. Fresh ingredients, bold flavors, and good vibes!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="logooo.jpg" alt="High Five Logo" class="logo-img">
+                    <div class="logo-text">High Five</div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn-primary" onclick="scrollToSection('#contact')">Order Now</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobile-menu">
+                <div class="mobile-nav-content">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#menu" class="mobile-nav-link">Menu</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#team" class="mobile-nav-link">Team</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <button class="btn-primary mobile-order-btn" onclick="scrollToSection('#contact')">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in-on-scroll">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Text Content -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text-secondary">High Five!</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Mapapa-apir ka Sa Sulit Sarap!
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('#menu')">
+                            Order Now
+                        </button>
+                        <button class="btn-outline" onclick="scrollToSection('#menu')">
+                            View Menu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Images --> 
+                <div class="hero-images">
+                    <div class="hero-main-image">
+                        <img src="burger.jpg" alt=" High Five Burger" class="main-burger-img">
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="decoration decoration-1"></div>
+                    <div class="decoration decoration-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section fade-in-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Our <span class="gradient-text-primary">Menu</span>
+                </h2>
+                <p class="section-subtitle">
+                    Every item on our menu is crafted with love and the finest ingredients. 
+                    Taste the difference quality makes!
+                </p>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Classic Burger -->
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-item-image">
+                        <img src="classic burger.jpg" alt="Classic High Five">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Regular Burger</h3>
+                            <span class="menu-item-price">35.00</span>
+                        </div>
+                        <p class="menu-item-b1t1">BUY 1 TAKE 1</p>
+                        <p class="menu-item-description">
+                            A perfectly seasoned, juicy all-beef patty grilled to perfection and served on a toasted bun. Simple, bold, and timeless.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- BBQ Burger -->
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-item-image">
+                        <img src="cheese burger.jpg" alt="BBQ Bacon Blast">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Cheese Burger</h3>
+                            <span class="menu-item-price">45.00</span>
+                        </div>
+                        <p class="menu-item-b1t1">BUY 1 TAKE 1</p>
+                        <p class="menu-item-description">
+                            A juicy all-beef patty topped with a slice of melted cheddar cheese, served on a warm toasted bun. Simple, cheesy, and satisfying.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Veggie Burger -->
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-item-image">
+                        <img src="footlong.jpg" alt="Garden High Five">
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Franks Solo</h3>
+                            <span class="menu-item-price">50.00</span>
+                        </div>
+                        <p class="menu-item-description">
+                           Our signature burger featuring a seasoned all-beef patty, topped with creamy cheddar cheese, crisp lettuce, fresh tomato, pickles, and our special house sauce—all served on a warm, toasted bun. Bold, classic, and packed with flavor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Curly Fries -->
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-item-image">
+                        <img src="footlong.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Franks Duo</h3>
+                            <span class="menu-item-price">95.00</span>
+                        </div>
+                         <p class="menu-item-b1t1">BUY 1 TAKE 1</p>
+                        <p class="menu-item-description">
+                            Our signature burger featuring a seasoned all-beef patty, topped with creamy cheddar cheese, crisp lettuce, fresh tomato, pickles, and our special house sauce—all served on a warm, toasted bun. Bold, classic, and packed with flavor.
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-item-image">
+                        <img src="quarter pounder.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Quarder Pounder</h3>
+                            <span class="menu-item-price">90.00</span>
+                        </div>
+                        <p class="menu-item-description">
+                            A thick, juicy 1/4 lb all-beef patty grilled to perfection, layered with melted cheese and served on a freshly toasted bun. Big on flavor, built to satisfy.
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-item-image">
+                        <img src="agnus burger.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Agnus Burger</h3>
+                            <span class="menu-item-price">105.00</span>
+                        </div>
+                        <p class="menu-item-description">
+                           Made with premium 100% Angus beef, this burger boasts rich, juicy flavor in every bite. Grilled to perfection and served on a toasted bun for a bold, elevated burger experience.
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item fade-in-on-scroll menu-item-hidden">
+                    <div class="menu-item-image">
+                        <img src="burger.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Sides</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+             
+
+            
+
+            <div class="menu-footer">
+                <p class="menu-footer-text">Can't find what you're looking for?</p>
+               <a href="menu.html" class="btn-secondary" id="viewFullMenuBtn">View Full Menu</a>
+                <button class="btn-outline" id="hideMenuBtn" style="display:none;">Hide Full Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section fade-in-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    About <span class="gradient-text-secondary">High Five</span>
+                </h2>
+                <p class="section-subtitle">
+                    Started in 2020 with a simple mission: to create burgers and fries so good, 
+                    they deserve a high five. We're not just serving food – we're serving joy, 
+                    one delicious bite at a time.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in-on-scroll">
+                    <div class="feature-icon">❤️</div>
+                    <h3 class="feature-title">Made with Love</h3>
+                    <p class="feature-description">
+                        Every burger and batch of fries is prepared with passion and care by our dedicated team.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-on-scroll">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Quality Ingredients</h3>
+                    <p class="feature-description">
+                        We source only the freshest, highest-quality ingredients from trusted local suppliers.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-on-scroll">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Community First</h3>
+                    <p class="feature-description">
+                        High Five is more than food - we're building a community where everyone feels welcome.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-on-scroll">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">Good Vibes Only</h3>
+                    <p class="feature-description">
+                        We believe great food comes with great energy. Every visit should leave you smiling!
+                    </p>
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="story-title">Our Story</h3>
+                <div class="story-content">
+                    <p>
+                        High Five was born from a simple idea: fast food doesn't have to sacrifice quality or fun. 
+                        Our founders, lifelong food enthusiasts, noticed that most burger joints focused on speed 
+                        over flavor, or atmosphere over taste.
+                    </p>
+                    <p>
+                        We decided to do things differently. Every recipe is crafted from scratch, every ingredient 
+                        is carefully selected, and every customer interaction is an opportunity to spread good vibes. 
+                        When you take that first bite of our burger or grab a handful of our perfectly seasoned fries, 
+                        we want you to feel like giving someone a high five!
+                    </p>
+                    <p class="story-highlight">
+                        That's the High Five difference – where great food meets great energy! 🖐️
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section fade-in-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Meet our <span class="gradient-text-primary">Ambassadors</span>
+                </h2>
+                <p class="section-subtitle">
+                    Our ambassadors bring the High Five spirit to life! Get to know the faces behind the good vibes.
+                </p>
+            </div>
+            <div class="features-grid team-grid">
+                <div class="feature-card fade-in-on-scroll team-card">
+                    <img src="burger.jpg" alt="JEPOY" class="team-img">
+                    <h3 class="feature-title team-name">JEPOY</h3>
+                    <p class="team-role">Brand Ambassador</p>
+                    <p class="team-desc">Jepoy brings the flavor and energy to every event, inspiring everyone to give a high five!</p>
+                </div>
+                <div class="feature-card fade-in-on-scroll team-card">
+                    <img src="burger.jpg" alt="BAUTISTA" class="team-img">
+                    <h3 class="feature-title team-name">BAUTISTA</h3>
+                    <p class="team-role">Brand Ambassador</p>
+                    <p class="team-desc">Bautista connects with our community and spreads good vibes wherever he goes.</p>
+                </div>
+                <div class="feature-card fade-in-on-scroll team-card">
+                    <img src="burger.jpg" alt="CLARIZA" class="team-img">
+                    <h3 class="feature-title team-name">CLARIZA</h3>
+                    <p class="team-role">Brand Ambassador</p>
+                    <p class="team-desc">Clariza is passionate about great food and making every customer feel welcome.</p>
+                </div>
+                <div class="feature-card fade-in-on-scroll team-card">
+                    <img src="burger.jpg" alt="KRIZZIE" class="team-img">
+                    <h3 class="feature-title team-name">KRIZZIE</h3>
+                    <p class="team-role">Brand Ambassador</p>
+                    <p class="team-desc">Krizzie brings fresh ideas and a welcoming smile to the High Five family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambassador Vlog Section -->
+    <section id="ambassador-vlog" class="vlog-section fade-in-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Ambassador <span class="gradient-text-primary">Vlog</span>
+                </h2>
+                <p class="section-subtitle">
+                    Watch our ambassadors share their High Five experiences and behind-the-scenes moments!
+                </p>
+            </div>
+            <div class="vlog-video-wrapper multi-vlog">
+                <video controls width="100%" poster="vlog-thumbnail.jpg">
+                    <source src="vlog.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls width="100%" poster="vlog2-thumbnail.jpg" style="margin-top:2rem;">
+                    <source src="vlog2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Example YouTube embed -->
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" 
+                    title="Ambassador Vlog 3" frameborder="0" allowfullscreen style="margin-top:2rem;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section fade-in-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get in <span class="gradient-text_primary">Touch</span>
+                </h2>
+                <p class="section-subtitle">
+                    Have questions, feedback, or just want to say hi? We'd love to hear from you! 
+                    Drop us a line and let's spread the good vibes together.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info fade-in-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Visit Us</h3>
+                            <p class="contact-text">123 Burger Street, Foodie District, City 12345</p>
+                            <button class="contact-action">Get Directions →</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Call Us</h3>
+                            <p class="contact-text">(555) HIGH-FIVE</p>
+                            <button class="contact-action">Call Now →</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Hours</h3>
+                            <p class="contact-text">Mon-Sun: 11:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-card modern-social-card">
+                        <h3 class="social-title">Follow the Vibes! 🖐️</h3>
+                        <div class="modern-social-links icon-only-social">
+                            <a href="https://instagram.com/highfiveburgers" class="modern-social-link instagram" target="_blank" rel="noopener" aria-label="Instagram">
+                                <img src="Instagram_icon.png" alt="Instagram" class="social-img-icon">
+                            </a>
+                            <a href="https://facebook.com/highfiveburgers" class="modern-social-link facebook" target="_blank" rel="noopener" aria-label="Facebook">
+                                 <img src="Facebook_Logo_.png" alt="Instagram" class="social-img-icon">
+                            </a>
+                            <a href="https://twitter.com/highfive_eats" class="modern-social-link twitter" target="_blank" rel="noopener" aria-label="Twitter">
+                                <img src="X-Logo.png" alt="Instagram" class="social-img-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container fade-in-on-scroll">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Send us a message</h3>
+                        <p class="form-subtitle">
+                            We'll get back to you faster than you can say "High Five!"
+                        </p>
+                        
+                        <form id="contact-form" class="contact-form" action="contact.php" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your name" required class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required class="form-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required rows="5" class="form-textarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary form-submit">
+                                Send Message 🖐️
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-text">High Five</div>
+                        <span class="logo-emoji">🖐️</span>
+                    </div>
+                    <p class="footer-description">
+                        Serving burgers and fries worth celebrating since 2020. 
+                        Fresh ingredients, bold flavors, and good vibes in every bite!
+                    </p>
+                    <div class="footer-social">
+                        <button class="social-btn"> <img src="Instagram_icon.png" alt="Instagram" class="social-img-icon"></button>
+                        <button class="social-btn"> <img src="Facebook_Logo_.png" alt="Instagram" class="social-img-icon"></button>
+                        <button class="social-btn"><img src="X-Logo.png" alt="Instagram" class="social-img-icon"></button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#menu" class="footer-link">Menu</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                        <li><a href="#contact" class="footer-link">Order Online</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact</h3>
+                    <div class="footer-contact-info">
+                        <p>123 Burger Street</p>
+                        <p>Foodie District, City 12345</p>
+                        <p>(555) HIGH-FIVE</p>
+                        <p>hello@highfiveburgers.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 High Five Burgers. All rights reserved. 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message (Hidden by default) -->
+    <div id="success-message" class="success-message">
+        <div class="success-content">
+            <h3>Message Sent! 🖐️</h3>
+            <p>Thanks for reaching out! We'll get back to you soon with all the good vibes.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

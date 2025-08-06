@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Menu - High Five</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="logooo.jpg" alt="High Five Logo" class="logo-img">
+                    <div class="logo-text">High Five</div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn-primary" onclick="scrollToSection('#contact')">Order Now</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobile-menu">
+                <div class="mobile-nav-content">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#menu" class="mobile-nav-link">Menu</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#team" class="mobile-nav-link">Team</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <button class="btn-primary mobile-order-btn" onclick="scrollToSection('#contact')">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="full-menu" class="menu-section">
+        <div class="container">
+            <h1>Full Menu</h1>
+            <p>All our items in one place. Enjoy browsing our complete selection!</p>
+
+            <div class="menu-filters">
+                 <button class="filter-btn" data-category="all">All</button>
+                 <button class="filter-btn" data-category="Burgers">Burgers</button>
+                 <button class="filter-btn" data-category="Drinks">Drinks</button>
+                  <button class="filter-btn" data-category="Noodle">Noodle</button>
+            </div>
+
+            <div class="menu-grid">
+                   <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="classic burger.jpg" alt="Classic High Five">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Regular Burger</h3>
+                            <span class="menu-item-price">35.00</span>
+                        </div>
+                        <p class="menu-item-b1t1">BUY 1 TAKE 1</p>
+                        <p class="menu-item-description">
+                            A perfectly seasoned, juicy all-beef patty grilled to perfection and served on a toasted bun. Simple, bold, and timeless.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- BBQ Burger -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="cheese burger.jpg" alt="BBQ Bacon Blast">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Cheese Burger</h3>
+                            <span class="menu-item-price">45.00</span>
+                        </div>
+                        <p class="menu-item-b1t1">BUY 1 TAKE 1</p>
+                        <p class="menu-item-description">
+                            A juicy all-beef patty topped with a slice of melted cheddar cheese, served on a warm toasted bun. Simple, cheesy, and satisfying.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Veggie Burger -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="footlong.jpg" alt="Garden High Five">
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Franks Solo</h3>
+                            <span class="menu-item-price">50.00</span>
+                        </div>
+                        <p class="menu-item-description">
+                           Our signature burger featuring a seasoned all-beef patty, topped with creamy cheddar cheese, crisp lettuce, fresh tomato, pickles, and our special house sauce—all served on a warm, toasted bun. Bold, classic, and packed with flavor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Curly Fries -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="footlong.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Franks Duo</h3>
+                            <span class="menu-item-price">95.00</span>
+                        </div>
+                         <p class="menu-item-b1t1">BUY 1 TAKE 1</p>
+                        <p class="menu-item-description">
+                            Our signature burger featuring a seasoned all-beef patty, topped with creamy cheddar cheese, crisp lettuce, fresh tomato, pickles, and our special house sauce—all served on a warm, toasted bun. Bold, classic, and packed with flavor.
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="quarter pounder.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Quarder Pounder</h3>
+                            <span class="menu-item-price">90.00</span>
+                        </div>
+                        <p class="menu-item-description">
+                            A thick, juicy 1/4 lb all-beef patty grilled to perfection, layered with melted cheese and served on a freshly toasted bun. Big on flavor, built to satisfy.
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="agnus burger.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Burgers</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Agnus Burger</h3>
+                            <span class="menu-item-price">105.00</span>
+                        </div>
+                        <p class="menu-item-description">
+                           Made with premium 100% Angus beef, this burger boasts rich, juicy flavor in every bite. Grilled to perfection and served on a toasted bun for a bold, elevated burger experience.
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="drinks.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Drinks</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="drinks.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Drinks</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="drinks.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Drinks</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="drinks.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Drinks</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="drinks.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Drinks</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="drinks.jpg" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Drinks</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="noodles.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Noodle</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="noodles.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Noodle</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="noodles.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Noodle</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="noodles.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Noodle</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="noodles.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Noodle</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+
+                  <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="noodles.png" alt="Seasoned Curly Fries">
+                        <div class="badge badge-popular">Popular</div>
+                        <div class="badge badge-category">Noodle</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Seasoned Curly Fries</h3>
+                            <span class="menu-item-price">50.99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Golden curly fries with our signature blend of spices. Perfect for sharing!
+                        </p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <a href="index.html" class="btn-outline">Back to Home</a>
+        </div>
+    </section>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const menuItems = document.querySelectorAll(".menu-item");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const category = button.getAttribute("data-category").trim().toLowerCase();
+
+                menuItems.forEach(item => {
+                    const badge = item.querySelector(".badge-category");
+                    const itemCategory = badge ? badge.textContent.trim().toLowerCase() : "";
+
+                    if (category === "all" || itemCategory === category) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
